@@ -25,6 +25,45 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+	.button.back-button {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 30px;
+		height: 30px;
+		background-color:   #fff;
+		color:#333;
+		text-decoration: none;
+		border-radius: 50%;
+		transition: background-color 0.3s ease;
+	  }
+	  
+	  .button.back-button:hover {
+		background-color: #555;
+	  }
+	  
+	  .button.back-button .icon {
+		font-size: 18px;
+	  }
+	  
+	  .image-collage {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+		gap: 10px; /* Adjust the gap between images as desired */
+	  }
+	
+	  .image-collage img {
+		width: 100%;
+		height: auto;
+		object-fit: cover; /* Maintain aspect ratio while filling the container */
+	  }
+	
+	
+												
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
